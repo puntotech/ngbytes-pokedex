@@ -1,0 +1,18 @@
+<div class="detail">
+    <h2>{{ pokemon.name }}</h2>
+    <h4>{{ pokemon.type }} type</h4>
+    <div class="content">
+      <img [src]="pokemon.imgUrl" />
+      <div>
+        <p>Height: {{ pokemon.height }}</p>
+        <p>Weight: {{ pokemon.weight }}</p>
+        <p>
+          {{ pokemon.description }}
+        </p>
+      </div>
+    </div>
+    <div>
+      <button (click)="update()" mat-raised-button color="primary">Edit</button>
+      <button (click)="delete()" mat-raised-button color="warn">Delete</button>
+    </div>
+  </div>

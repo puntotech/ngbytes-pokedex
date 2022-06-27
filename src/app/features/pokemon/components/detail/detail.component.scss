@@ -1,0 +1,30 @@
+.detail {
+    border-radius: 15px;
+    box-shadow: 0 0 11px #cacaca;    
+    padding: 30px;
+
+    button {
+        margin-right: 10px;
+    }
+    
+    h2 {
+        margin-bottom: 10px;
+    }
+    
+    h4 {
+        color: rgba(0,0,0,.54);
+        font-weight: normal;
+        margin-top: 0;
+    }
+    
+    .content {
+        display: flex;
+    
+        img {
+            height: 250px;
+            margin-right: 15px;
+            max-width: 250px;
+            object-fit: cover;
+        }
+    }
+}

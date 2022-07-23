@@ -1,5 +1,5 @@
 import { Component, Inject, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 import { Pokemon } from '../../interfaces/pokemon.interface';
@@ -10,9 +10,9 @@ import { Pokemon } from '../../interfaces/pokemon.interface';
   styleUrls: ['./form.component.scss'],
 })
 export class FormComponent implements OnInit {
-  form: FormGroup;
+  form: UntypedFormGroup;
   constructor(
-    private readonly formBuilder: FormBuilder,
+    private readonly formBuilder: UntypedFormBuilder,
     public readonly dialogRef: MatDialogRef<FormComponent>,
     @Inject(MAT_DIALOG_DATA) private readonly pokemon: Pokemon
   ) {}
